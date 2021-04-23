@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Book</title>
+
+    <!--LINK CSS FILE-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="book">
+        <div style="background-image: url(img/1.jpg);"></div>
+        <div style="background-image: url(img/2.jpg);"></div>
+        <div style="background-image: url(img/3.jpg);"></div>
+        <div style="background-image: url(img/4.jpg);"></div>
+        <div style="background-image: url(img/5.jpg);"></div>
+        <div style="background-image: url(img/6.jpg);"></div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/turn.js"></script>
+<script>
+    $('#book').turn({gradients: true, acceleration: true});
+</script>
+</body>
+</html>
